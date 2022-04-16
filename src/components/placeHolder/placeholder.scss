@@ -1,0 +1,13 @@
+@use "../../scss/mixins.scss" as mixin;
+@use "../../scss/variables.scss" as styles;
+
+.placeholder {
+	@include mixin.flexDisplay(column, center, center);
+	border: 1px solid styles.$color-inactive;
+	border-radius: styles.$radius;
+	color: styles.$color-sub-inactive;
+	font-weight: 600;
+	width: 345px;
+	height: 264px;
+	margin: 0 auto;
+}

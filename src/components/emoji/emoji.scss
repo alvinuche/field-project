@@ -1,0 +1,14 @@
+@use "../../scss/mixins.scss" as mixin;
+@use "../../scss//variables.scss" as styles;
+
+.emoji {
+	cursor: pointer;
+
+	.emoji__box {
+		@include mixin.flexDisplay(row, center, center);
+		background-color: styles.$color-inactive-emoji;
+		width: 55px;
+		height: 55px;
+		border-radius: 50%;
+	}
+}

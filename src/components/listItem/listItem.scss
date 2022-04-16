@@ -1,0 +1,37 @@
+@use "../../scss/variables.scss" as styles;
+@use "../../scss/mixins.scss" as mixin;
+
+.listitem {
+	width: 100%;
+	margin: 0 auto;
+	background-image: url(../../assets/images/bg-cat.png);
+	background-color: styles.$color-list-bg;
+	background-repeat: no-repeat;
+	background-position: right;
+
+	.listitem__content {
+		@include mixin.flexDisplay(row, flex-start, center);
+		column-gap: 1rem;
+		text-align: left;
+		margin-bottom: 0.5rem;
+		padding: 0.875rem 1rem;
+		background-color: styles.$color-list-bg;
+		border-radius: styles.$radius;
+	}
+
+	.listitem__content__info {
+		.listitem__content__msg {
+			font-size: styles.$font-sub-title;
+			font-weight: styles.$font-weight;
+		}
+		.listitem__content__date {
+			color: rgba(196, 196, 196, 1);
+		}
+	}
+}
+
+@media screen and (min-width: 48em) {
+	.listitem {
+		width: 80%;
+	}
+}

@@ -1,0 +1,18 @@
+@use "../../scss/mixins.scss" as mixin;
+@use "../../scss/variables.scss" as styles;
+
+.list {
+	width: 100%;
+	.list__icons {
+		@include mixin.flexDisplay(row, center, center);
+		column-gap: 0.5rem;
+	}
+
+	.list__title {
+		letter-spacing: styles.$spacing;
+		color: styles.$color-sub-header-light;
+		text-transform: uppercase;
+		font-weight: 600;
+		margin-bottom: 2.5rem;
+	}
+}

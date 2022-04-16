@@ -1,0 +1,16 @@
+@use "../../scss/mixins.scss" as mixin;
+@use "../../scss/variables.scss" as styles;
+
+.header {
+	.header__image {
+		@include mixin.flexDisplay(column, center, center);
+		margin-bottom: 1.25rem;
+	}
+
+	.header__title {
+		font-size: styles.$font-size-title;
+		font-weight: styles.$font-weight;
+		color: styles.$color-header;
+		margin-bottom: 3.5rem;
+	}
+}

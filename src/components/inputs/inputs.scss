@@ -1,0 +1,19 @@
+@use "../../scss/variables.scss" as styles;
+
+.save {
+	.save__button {
+		background-color: styles.$color-inactive;
+		color: styles.$color-white;
+		font-size: styles.$font-sub-title;
+		border-radius: styles.$radius;
+		font-weight: styles.$font-weight;
+		width: 134px;
+		height: 41px;
+		border: 0;
+		outline: 0;
+		cursor: pointer;
+	}
+	.save__button--active {
+		background-color: styles.$color-active;
+	}
+}

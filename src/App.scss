@@ -1,0 +1,65 @@
+@use "./scss//variables.scss" as styles;
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap");
+
+// RESET COMMON STYLES
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	font-family: styles.$font-family;
+}
+
+body,
+ul,
+h1,
+h2,
+h3,
+p,
+button,
+a,
+div,
+section,
+main {
+	padding: 0;
+	list-style-type: none;
+	text-decoration: none;
+}
+
+// GLOBAL STYLES
+.global--red {
+	color: styles.$color-red;
+	border: 2px solid styles.$color-red;
+	// background-color: styles.$color-red-light;
+}
+.global--green {
+	color: styles.$color-green;
+	border: 2px solid styles.$color-green;
+	// background-color: styles.$color-green-light;
+}
+.global--orange {
+	color: styles.$color-orange;
+	border: 2px solid styles.$color-orange;
+	// background-color: styles.$color-orange-light;
+}
+
+.global--red--text {
+	color: styles.$color-red;
+}
+.global--green--text {
+	color: styles.$color-green;
+}
+.global--orange--text {
+	color: styles.$color-orange;
+}
+
+.emoji .global--red--bg.emoji__box {
+	background-color: styles.$color-red-light;
+}
+.emoji .global--green--bg.emoji__box {
+	background-color: styles.$color-green-light;
+}
+.emoji .global--orange--bg.emoji__box {
+	background-color: styles.$color-orange-light;
+}

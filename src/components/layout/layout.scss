@@ -1,0 +1,16 @@
+@use "../../scss/variables.scss" as styles;
+
+.layout {
+	max-width: styles.$max-width;
+	background-color: styles.$color-white;
+	margin: 0 auto;
+
+	.layout__content {
+		display: grid;
+		justify-content: flex-start;
+		align-items: flex-start;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 6rem;
+		margin: 4rem 3rem;
+	}
+}
